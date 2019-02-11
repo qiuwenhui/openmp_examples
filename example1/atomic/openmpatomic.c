@@ -2,7 +2,7 @@
  * @Author: mikey.qiuwenhui 
  * @Date: 2019-02-11 15:50:49 
  * @Last Modified by: mikey.qiuwenhui
- * @Last Modified time: 2019-02-11 16:17:38
+ * @Last Modified time: 2019-02-11 16:19:27
  * 线程同步之 atomic
  * atomic（原子）操作语法
  * #pragma omp atomic
@@ -21,7 +21,7 @@ int main()
     for(int i = 0; i < 20000;++i)
     {
         /* code */
-         #pragma omp atomic
+         #pragma omp atomic //对某一块代码操作进行保护，以保证同时只能有一个线程执行该段代码
          sum++;
     }
     printf("Atomic-After:%d\n",sum);
