@@ -3,7 +3,7 @@
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc -fopenmp $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -fopenmp $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
@@ -40,6 +40,8 @@
         "haskell": "runhaskell",
         "nim": "nim compile --verbosity:0 --hints:off --run",
         "lisp": "sbcl --script"
-    }
+    },
+    "fileheader.Author": "mikey.qiuwenhui",
+    "fileheader.LastModifiedBy": "mikey.qiuwenhui"
     
 }
