@@ -21,10 +21,10 @@ int main()
         int private_c =2;
 
         #pragma omp for private(share_to_private_b)
-        for(int i = 0; i < 10; ++i)
+        for(int i = 0; i < 10; ++i)//该循环变量是私有的，若为两个线程，则一个线程执行0~4，另一个执行5~9
         {
             /* code */
-             cout<<i<<endl;
+             cout<<"x="<<i<<endl;
         }
         
        

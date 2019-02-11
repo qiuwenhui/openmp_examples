@@ -42,6 +42,9 @@
         "lisp": "sbcl --script"
     },
     "fileheader.Author": "mikey.qiuwenhui",
-    "fileheader.LastModifiedBy": "mikey.qiuwenhui"
+    "fileheader.LastModifiedBy": "mikey.qiuwenhui",
+    "files.associations": {
+        "atomic": "c"
+    }
     
 }
